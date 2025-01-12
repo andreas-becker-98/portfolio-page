@@ -1,0 +1,205 @@
+/*
+    ===== GENERAL RULES =====
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+
+    background-color: #fefefe;
+}
+
+img {
+    width: 100%;
+}
+
+img.crop {
+    object-fit: cover;
+    object-position: 0% 80%;
+}
+
+p a {
+    color: inherit;
+    text-decoration: underline dotted;
+    color:#284b63;
+}
+
+p a:hover {
+    color: inherit;
+    text-decoration: underline dotted;
+    color:#284b63;
+    font-weight: bolder;
+}
+
+
+/*
+    ===== HEADER & FOOTER =====
+*/
+
+header, footer {
+    background-color: #d9d9d9;
+    color: #353535;
+    font-weight: bolder;
+    padding: 2rem;
+}
+
+header {
+    border-bottom: #284b63 solid 1em;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    font-weight: lighter;
+    font-size: 4em;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 2rem;
+    color: #353535;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+footer {
+    border-top: #284b63 solid 1em;
+}
+
+footer p {
+    max-width: 25em;
+    margin-left: auto;
+    text-align: left;
+}
+
+
+/*
+    ===== MAIN BODY =====
+*/
+
+main {
+    margin: 30px auto 0;
+    width: 600px;
+}
+
+main hr {
+    margin: 4em auto 4em;
+    padding: 0;
+    width: 70%;
+    border-style: dashed;
+}
+
+
+/*
+    ===== MAIN BODY - SECTIONS =====
+*/
+
+section {
+    margin: 3em 0;
+}
+
+section h2 {
+    margin-bottom: 0.8em;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+section p {
+    margin: 0.8em 0;
+    text-align: justify;
+}
+
+section hr {
+    margin: 3em auto 3em;
+    padding: 0;
+    width: 50%;
+    border-style: solid;
+}
+
+
+/*
+    ===== CONTECT FORM =====
+*/
+
+section#contact {
+    background-color: #284b63;
+    color: #fefefe;
+    padding: 1em;
+    border-radius: 0.45em;
+}
+
+form label {
+    display: inline-block;
+    width: 5em;
+    margin-bottom: 0.5em;
+}
+
+form input {
+    display: inline-block;
+    height: 1.5em;
+    width: 20em;
+    margin-right: auto;
+    font-family: inherit;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+    background-color: #fefefe;
+    color: #284b63;
+
+    border: none;
+    border-radius: 0.35em;
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 80%;
+    height: 2em;
+    margin: 1.5em auto 0;
+    align-content: center;
+    font-weight: bolder;
+    font-size: large;
+}
+
+form input[type="submit"]:hover {
+    background-color: #284b63;
+    color: #fefefe;
+    border: 0.12em solid #fefefe;
+}
+
+form input[type="submit"]:focus {
+    background-color: #fefefe;
+    color: #284b63;
+    border: none;
+}
+
+form textarea {
+    display: block;
+    font-family: inherit;
+    padding: 0.5em;
+
+    background-color: #fefefe;
+    color: #284b63;
+
+    border: none;
+    border-radius: 0.35em;
+    margin: 0.5em auto 0;
+    align-content: center;
+
+    resize: none;
+    width: 550px;
+}
+
+
