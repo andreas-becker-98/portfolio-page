@@ -47,9 +47,14 @@ header, footer {
     color: #353535;
     font-weight: bolder;
     padding: 2rem;
+    z-index: 20;
 }
 
 header {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
     border-bottom: #284b63 solid 1em;
     text-align: center;
 }
@@ -58,6 +63,48 @@ header h1 {
     margin-bottom: 1rem;
     font-weight: lighter;
     font-size: 4em;
+}
+
+header a {
+    display: inline-block;
+    margin: 0 2rem;
+    color: #353535;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+header a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+footer {
+    border-top: #284b63 solid 1em;
+}
+
+footer p {
+    max-width: 25em;
+    margin-left: auto;
+    text-align: left;
+}
+
+/*
+    ===== NAV BAR =====
+*/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100;
+    z-index: 10;
+    background-color: #d9d9d9;
+    height: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+    border-bottom: #284b63 solid 0.7rem;
 }
 
 nav a {
@@ -74,15 +121,6 @@ nav a:hover {
     font-weight: bolder;
 }
 
-footer {
-    border-top: #284b63 solid 1em;
-}
-
-footer p {
-    max-width: 25em;
-    margin-left: auto;
-    text-align: left;
-}
 
 
 /*
